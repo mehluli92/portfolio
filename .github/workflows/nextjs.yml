@@ -45,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
-          name: github-pages  # Name of the artifact
+          name: portfolio-site  # Name of the artifact
           path: './out'
 
   # Deployment job
@@ -60,4 +60,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          artifact_name: github-pages  # Name of the artifact
+          artifact_name: portfolio-site  # Name of the artifact
